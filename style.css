@@ -1,0 +1,119 @@
+body {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #28242a 0%, #000000 100%);
+    background-attachment: fixed;
+}
+
+/*Isla de navegación, posicionamiento y molde base*/
+.island-nav-layout{
+    position: fixed;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ffffff1f;
+    border-radius: 40px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    padding: 10px;
+    z-index: 1000;
+}
+
+/*Isla de navegación, estilos internos*/
+.island-nav ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 20px;
+}
+
+.island-nav a {
+    display: inline-block;
+    padding: 8px 30px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 300;
+    white-space: nowrap;
+}
+
+.island-nav a:hover, .island-nav a:focus-visible {
+    transform: translateY(-2px) scale(1.05);
+    outline: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.island-nav li {
+    margin: 0px;
+}
+
+/* Estilos para el contenido principal */
+.main-content {
+    padding: 50px 20px;
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.card{
+    background: rgba(131, 122, 122, 0.2);
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px auto; 
+    backdrop-filter: blur(10px);    
+}
+
+.hero{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 85%;
+    height: 25%;
+    background: rgba(213, 211, 211, 0.107);
+    margin: 20px auto;
+    margin-top: 20%;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: visible;
+}
+
+.hero img{
+  position: absolute;
+  width: 100%;
+  max-width: 55%;
+  height: auto;
+  right: 0;
+  bottom: 0;
+}
+
+.box-hero{
+    max-width: 50%;
+    padding: 20px;
+    margin-left: 5%;    
+}
+
+/* Estilos para los encabezados y texto*/
+h1{
+    font-size: 50px;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    left: 5%;
+}
+
+p{
+    font-size: 15px;
+    font-weight: 250;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    width: 80%;
+    background: #ffffff;
+    margin: 20px auto;
+}
