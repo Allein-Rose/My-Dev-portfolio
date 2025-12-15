@@ -4,8 +4,31 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #28242a 0%, #000000 100%);
+    background: linear-gradient(135deg, #28242a 0%, #363636 100%);
     background-attachment: fixed;
+}
+
+/* Estilos para los encabezados y texto*/
+h1{
+    font-size: 50px;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    left: 5%;
+}
+
+p{
+    font-size: 15px;
+    font-weight: 250;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    width: 80%;
+    background: #ffffff;
+    margin: 20px auto;
 }
 
 /*Isla de navegación, posicionamiento y molde base*/
@@ -44,6 +67,7 @@ body {
 }
 
 .island-nav a:hover, .island-nav a:focus-visible {
+    border-radius: 24px;
     transform: translateY(-2px) scale(1.05);
     outline: none;
     box-shadow: 0 4px 10px rgba(0,0,0,0.08);
@@ -60,13 +84,18 @@ body {
     margin: 0 auto;
 }
 
-.card{
-    background: rgba(175, 170, 170, 0.2);
+.card{ 
     border-radius: 10px;
     padding: 30px;
     margin: 20px auto; 
     backdrop-filter: blur(10px);    
     box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.card:hover{
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-2px) scale(1.05); 
+    outline: none;
 }
 
 .hero{
@@ -75,12 +104,26 @@ body {
     align-items: center;
     width: 85%;
     height: 25%;
-    background: rgba(213, 211, 211, 0.107);
+    background-image: url(picture/background-hero.png);
     margin: 20px auto;
     margin-top: 30%;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     overflow: visible;
+}
+
+.hero h1{
+    color: #000000;
+    padding: 4px 8px;
+    background-color: #e2e2e2;
+    border-radius: 8px;
+    display: inline;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-decoration-break: clone;
+    font-size: 50px;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    left: 5%;
 }
 
 .hero img{
@@ -97,29 +140,6 @@ body {
     margin-left: 5%;  
 }
 
-/* Estilos para los encabezados y texto*/
-h1{
-    font-size: 50px;
-    font-weight: 300;
-    letter-spacing: 1.5px;
-    left: 5%;
-}
-
-p{
-    font-size: 15px;
-    font-weight: 250;
-    line-height: 1.6;
-    text-align: justify;
-}
-
-hr {
-    border: none;
-    height: 1px;
-    width: 80%;
-    background: #ffffff;
-    margin: 20px auto;
-}
-
 @media (max-width: 768px) {
 
     .text-island-nav {
@@ -131,7 +151,11 @@ hr {
 
     }
 
-    h1{
+    .hero h1{
     font-size: 30px;
+    }
+
+    .island-nav-layout{
+    max-width: 90%;
     }
 }
