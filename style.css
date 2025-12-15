@@ -105,6 +105,7 @@ hr {
     width: 85%;
     height: 25%;
     background-image: url(picture/background-hero.png);
+    background-attachment: fixed;
     margin: 20px auto;
     margin-top: 30%;
     border-radius: 12px;
@@ -152,10 +153,15 @@ hr {
     }
 
     .hero h1{
-    font-size: 30px;
+    font-size: 24px;
     }
 
     .island-nav-layout{
     max-width: 90%;
     }
+
+    .island-nav {
+        padding: 8px;
+    }
+
 }
