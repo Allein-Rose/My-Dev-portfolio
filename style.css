@@ -4,8 +4,23 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #28242a 0%, #363636 100%);
+    background: linear-gradient(135deg, #2c2e39 0%, #323232 100%);
     background-attachment: fixed;
+}
+
+.btn {
+    background: linear-gradient(135deg, #2c2e39 0%, rgb(140, 139, 141) 100%);
+    color: rgb(0, 0, 0);
+    padding: 18px 40px;
+    font-size: 18px;
+    font-weight: 300;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 /* Estilos para los encabezados y texto*/
@@ -80,15 +95,18 @@ hr {
 
 /* Estilos para el contenido principal */
 .main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     padding: 50px 20px;
     max-width: 85%;
     margin: 0 auto;
+    gap: 20px
 }
 
 .card{ 
     border-radius: 10px;
     padding: 30px;
-    margin: 20px auto; 
+    margin: 0; 
     backdrop-filter: blur(10px);    
     box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
@@ -149,8 +167,7 @@ hr {
     }
     
     .hero{
-    height: 15%
-
+    height: 15%;
     }
 
     .hero h1{
